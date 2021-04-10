@@ -29,9 +29,7 @@ This application is intended to organize a person's daily work life with simple 
 
 ## Screenshots
 
-Nothing here yet.
-
-![Nothing Here](./assets/images/testgif.gif)
+![Nothing Here](./Develop/sreenshot.png)
 
 
 ## Language
