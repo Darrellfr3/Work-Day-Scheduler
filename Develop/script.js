@@ -18,7 +18,7 @@ for (var i = 9; i < 18; i++) {
 function hourTracker() {
     $(".time-block").each(function () {
         var hourBlock = parseInt($(this).attr("id"));
-        console.log( blockHour, hour)
+        console.log( hourBlock, hour)
 
         if (hourBlock < hour) {
             $(this).addClass("past");
