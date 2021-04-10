@@ -11,21 +11,21 @@ $(".saveBtn").on("click", function () {
     localStorage.setItem(time, text);
 })
 
-for (var i = 9; i < 17; i++) {
+for (var i = 9; i < 18; i++) {
     $(`#${i} .description`).val(localStorage.getItem(`${i}`));
 }
 
 function hourTracker() {
     $(".time-block").each(function () {
-        var blockHour = parseInt($(this).attr("id"));
+        var hourBlock = parseInt($(this).attr("id"));
         console.log( blockHour, hour)
 
-        if (blockHour < hour) {
+        if (hourBlock < hour) {
             $(this).addClass("past");
             $(this).removeClass("future");
             $(this).removeClass("present");
         }
-        else if (blockHour === hour) {
+        else if (hourBlock === hour) {
             $(this).removeClass("past");
             $(this).addClass("present");
             $(this).removeClass("future");
